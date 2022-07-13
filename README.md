@@ -1,6 +1,6 @@
 # Bracalet authentication service
 
-Imagine a simple, beautiful, secure, and freaking fast way to authenticate your users throw the internet. That's exactly why you should trust our bracelets. ✨
+Imagine a simple, beautiful, secure, and freaking fast way to authenticate your users through the internet. That's exactly why you should trust our bracelets. ✨
 
 # Service mission
 
