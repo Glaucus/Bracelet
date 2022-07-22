@@ -1,5 +1,6 @@
 package password
 
 type Response struct {
-	Token string `json:"token"`
+	Error string `json:"error,omitempty"`
+	Token string `json:"token,omitempty"`
 }
