@@ -1,6 +1,10 @@
 package main
 
-import "github.com/Glaucus/Bracelet/httpServer"
+import (
+	_ "github.com/joho/godotenv/autoload" // Automatically loads godotenv .env file contents. 💖
+
+	"github.com/Glaucus/Bracelet/httpServer"
+)
 
 func main() {
 	// Start http server

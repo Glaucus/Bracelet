@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
+	"os"
 )
 
 func Controller(w http.ResponseWriter, r *http.Request) {
@@ -19,7 +20,7 @@ func Controller(w http.ResponseWriter, r *http.Request) {
 	claims.Set("user_id", -1)
 
 	// Generate jwt
-	secretKey := []byte("random_secret_key_will_be_here")
+	secretKey := []byte(os.Getenv("JWT_SIGNING_KEY"))
 	jwt := claims.Generate(secretKey)
 
 	json.NewEncoder(w).Encode(Response{Token: jwt})
