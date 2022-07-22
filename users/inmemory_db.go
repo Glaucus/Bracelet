@@ -20,6 +20,7 @@ func addUser(username, password string) error {
 	}
 
 	users = append(users, User{
+		randSeq(12),
 		username,
 		password,
 	})
